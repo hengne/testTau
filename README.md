@@ -2,7 +2,7 @@
 
 # testTau
 
-This repository provides a simple example of generating **Z â ÏÏ** events in [Pythia8](https://pythia.org/) where each Ï decays exclusively to **e + 2Î½**, with **FSR (Final-State Radiation)** photons allowed from the electron. It saves various energies to CSV files and provides Python scripts to plot them.
+This repository provides a simple example of generating **Z -> tau tau**  events in [Pythia8](https://pythia.org/) where each Ï decays exclusively to **e + 2Î½**, with **FSR (Final-State Radiation)** photons allowed from the electron. It saves various energies to CSV files and provides Python scripts to plot them.
 
 ---
 
