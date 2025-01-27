@@ -94,7 +94,7 @@ Execute:
    - Saves photon energies in both lab and tau rest frames, plus tau energies, to CSV files.
    - Electron energies are also recorded in `electron_energies.csv`.
 
-3. **Prints** debug info, e.g. âFound FSRâ and the event listing for certain events.
+3. **Prints** debug info, e.g. "Found FSR" and the event listing for certain events.
 
 After completion, you should see files like:
 - `photon_energies.csv` (photon energies in the tau rest frame)
