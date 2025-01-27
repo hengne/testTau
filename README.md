@@ -1,8 +1,6 @@
 # testTau
 
-# testTau
-
-This repository provides a simple example of generating **Z -> tau tau**  events in [Pythia8](https://pythia.org/) where each Ï decays exclusively to **e + 2Î½**, with **FSR (Final-State Radiation)** photons allowed from the electron. It saves various energies to CSV files and provides Python scripts to plot them.
+This repository provides a simple example of generating **Z -> tau tau** events in [Pythia8](https://pythia.org/) where each tau decays exclusively to **e + 2nu**, with **FSR (Final-State Radiation)** photons allowed from the electron. It saves various energies to CSV files and provides Python scripts to plot them.
 
 ---
 
@@ -86,20 +84,20 @@ Execute:
 
 1. **Generates** 1,000,000 events where:
    - A single **Z** boson (PDG=23) is placed at rest.
-   - The **Z** decays only into **ÏÏ** (forced).
-   - Each **Ï** decays only into **e Î½ Î½** (forced).
+   - The **Z** decays only into **tau tau** (forced).
+   - Each **tau** decays only into **e nu nu** (forced).
    - **FSR** is enabled, so electrons can emit photons.
 
 2. **Loops** over the resulting event record:
    - Finds photons that came from electron FSR.
-   - Computes a Lorentz boost to put them into the **Ï rest frame**.
-   - Saves photon energies in both lab and Ï rest frames, plus tau energies, to CSV files.
+   - Computes a Lorentz boost to put them into the **tau** rest frame.
+   - Saves photon energies in both lab and tau rest frames, plus tau energies, to CSV files.
    - Electron energies are also recorded in `electron_energies.csv`.
 
 3. **Prints** debug info, e.g. âFound FSRâ and the event listing for certain events.
 
 After completion, you should see files like:
-- `photon_energies.csv` (photon energies in the Ï rest frame)
+- `photon_energies.csv` (photon energies in the tau rest frame)
 - `photon_energies_lab.csv` (photon energies in the lab frame)
 - `tau_energies.csv`
 - `tau_energies_lab.csv`
@@ -111,7 +109,7 @@ After completion, you should see files like:
 
 ### 5.1 Single Dataset
 
-To view the distribution of **photon energies** in the **Ï rest frame**:
+To view the distribution of **photon energies** in the **tau** rest frame:
 ```bash
 python -i plot.py
 ```
@@ -144,7 +142,4 @@ You can further customize the code in `plot2.py` to suit your analysis needs.
 - The CSV files are regenerated each time you run `./main42`, potentially overwriting existing data. If you want separate outputs per run, rename them or move them in a script.
 
 - You can also tweak other decay or FSR settings by changing the Pythia8 commands in `main42.cc`.
-
-
-
 
